@@ -220,6 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 45px 0px 0px 0px;
   max-width: 822px;
   max-height: 715px;
+  animation: bounce 5s ease infinite;
 }
 
 .opening__img-scooter img {
@@ -438,6 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subscription__row-one-img {
+  animation: bounce 5s ease infinite;
   margin: 30px 0px 0px 0px;
   max-width: 700px;
   max-height: 700px;
@@ -790,6 +792,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px 5px 0 auto;
     max-width: 353px;
     max-height: 357px;
+    animation: bounce 5s ease infinite;
   }
   .opening__img-scooter img {
     width: 100%;
