@@ -33,7 +33,7 @@
 	z-index: -2;
 }
 
-.hide{
+.hide_br{
 	display: none;
 }
 .opening {
@@ -264,7 +264,13 @@
 	}
 }
 .events__foto1 {
+	display: none;
 }
+
+.slider__button{
+	display: none;
+}
+
 .foto {
 	margin: 21px 0px 0px 0px;
 	max-width: 456px;
@@ -277,6 +283,7 @@
 	}
 }
 .events__foto2 {
+	display: none;
 }
 .events__right-block {
 	width: 50%;
@@ -663,6 +670,12 @@
 
 @media (max-width:375px) {
 
+	.events__foto{
+		display: none;
+	}
+	.events__foto1, .events__foto2{
+		display: block; 
+	}
 		
 	.coteiner{
 		width: 375px;
@@ -820,7 +833,7 @@
 
 
 	
-
+	
 	.events {
 
 		h1{
@@ -850,14 +863,42 @@
 		position: relative;
 	}
 	
-	
-	.foto {
-		margin: 21px 0px 0px 0px;
-		max-width: 456px;
-		max-height: 456px;
+	.slider{
+		position: relative;
+		overflow: hidden;
+
+		&__button {
+			margin: 368px 0px 0px 0px;
+			display: flex;
+			justify-content: center;
+			button{
+				background-color: transparent;
+			}
+		}
+	}
+			
+		.prev {
+			margin: 0px 12px 0px 0px;
+		
+		}
+		.next {
+		}
+
+
+
+	.foto__slider {
+		margin: 0px 0px 0px 0px;
+		position: absolute;
+		top: 0;
+		left:0;
+		opacity: 0;
+
 		img{
 			transform: rotate(0deg);
 		}
+	}
+	.foto__slider.active{
+		opacity: 1;
 	}
 	
 	.events__right-block {
@@ -866,14 +907,19 @@
 		margin: 0px 0px 0px 0px;
 	}
 	.events__strokes {
-		
-	}
-	.events__foto3 {
-		margin: 0px 0px 0px 0px;
-	}
-
-	.hide{
 		display: block;
+		width: 80px;
+		height: 80px;
+		top:-50px;
+	}
+	
+
+	.hide_br{
+		display: block;
+	}
+	.hide{
+		//display: none;
+		opacity: 0.5;
 	}
 
 
